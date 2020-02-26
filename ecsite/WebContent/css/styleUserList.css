@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+	/*===========TAG LAYOUT============*/
+		body{
+			margin:0;
+			padding:0;
+			line-height:1.6;
+			letter-spacing:1px;
+			font-family:Verdana,Helvetica,sans-serif;
+			font-size:12px;
+			color:#333;
+			background:#fff;
+		}
+
+		table {
+			text-align:center;
+			margin:0 auto;
+		}
+
+
+
+
+		/*=========ID LAYOUT==========*/
+
+		#top {
+			width:780px;
+			margin:80px auto;
+			border:1px solid #333;
+		}
+
+		#header {
+			width:100%;
+			height:50px;
+			position:fixed;
+			top:0px;
+			background-color:slategray;
+		}
+
+
+		.header-title img {
+			width:35px;
+			padding :8px;
+			float : left;
+		}
+
+		.header-title p {
+			font-size:20px;
+			margin:0;
+			color:white;
+			float:left;
+			line-height:50px;
+		}
+
+
+		.header-menu li {
+			list-style-type:none;
+			float:right;
+			margin-top:6px;
+			margin-right:5px;
+
+			}
+
+		.header-menu li a {
+			text-decoration:none;
+			color:white;
+			}
+
+		#main {
+			width:100%;
+			height:500px;
+			text-align:center;
+		}
+
+		#footer {
+			width:100%;
+			height:80px;
+			background-color:#36444d;
+			clear:both;
+		}
+
+		.itemList {
+			width:700px;
+		}
+
+		.itemList tr {
+			height:25px;
+		}
+
+		.idLine {
+			width:10%;
+		}
+		.itemLine{
+			width:15%;
+		}
+		.priceLine{
+			width:15%;
+		}
+		.countLine{
+			width:15%;
+		}
+		.insertLine {
+			width:20%;
+		}
+		.updateLine {
+			width:20%;
+		}
+		.ectLine{
+			width:5%;
+		}
