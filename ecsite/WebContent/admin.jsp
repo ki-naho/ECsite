@@ -48,7 +48,19 @@
 		</div>
 	</div>
 
-	<div id="footer">
+		<div id="footer">
+		<div class="footer-link">
+			<ul>
+				<li>初めての方へ</li>
+				<li>会社概要</li>
+				<li>利用規約</li>
+				<li>プライバシーポリシー</li>
+				<li>推奨環境</li>
+			</ul>
+		</div>
+		<div class="copyRight">
+			<p>Copyrights © itudemo Corp.</p>
+		</div>
 	</div>
 
 

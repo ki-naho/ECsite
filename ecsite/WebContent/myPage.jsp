@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ taglib prefix="s" uri="/struts-tags" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,7 +11,7 @@
 <body>
 	<div id="header">
 		<div class="header-title">
-			<img src="./image/headerIcon.png"/>
+			<img src="./image/headerIcon.png" />
 			<p>DOCO DEMO</p>
 		</div>
 		<div class="header-menu">
@@ -30,7 +30,7 @@
 			<s:if test="myPageList == null">
 				<h3>ご購入情報はありません。</h3>
 			</s:if>
-			<s:elseif test ="message ==null">
+			<s:elseif test="message ==null">
 				<h3>ご購入情報は以下になります。</h3>
 				<table border="1">
 					<tr>
@@ -52,18 +52,37 @@
 				</table>
 				<s:form action="MyPageAction">
 					<input type="hidden" name="deleteFlg" value="1">
-					<s:submit value="削除"/>
+					<s:submit value="削除" />
 				</s:form>
 			</s:elseif>
 			<s:if test="message !=null">
-				<h3><s:property value="message"/></h3>
+				<h3>
+					<s:property value="message" />
+				</h3>
 			</s:if>
 			<div id="text-right">
-				<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
-				<p>ログアウトする場合は<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
+				<p>
+					Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a>
+				</p>
+				<p>
+					ログアウトする場合は<a href='<s:url action="LogoutAction"/>'>こちら</a>
+				</p>
 			</div>
 		</div>
 	</div>
-	<div id="footer"></div>
+	<div id="footer">
+		<div class="footer-link">
+			<ul>
+				<li>初めての方へ</li>
+				<li>会社概要</li>
+				<li>利用規約</li>
+				<li>プライバシーポリシー</li>
+				<li>推奨環境</li>
+			</ul>
+		</div>
+		<div class="copyRight">
+			<p>Copyrights © itudemo Corp.</p>
+		</div>
+	</div>
 </body>
 </html>

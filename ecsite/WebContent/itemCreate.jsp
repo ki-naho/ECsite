@@ -26,35 +26,52 @@
 		<div id="top">
 			<p>商品新規登録</p>
 		</div>
-		<s:form action ="ItemCreateConfirmAction" method="post" enctype="multipart/form-data">
+		<s:form action="ItemCreateConfirmAction" method="post"
+			enctype="multipart/form-data">
 			<s:if test='errorMessage !="" '>
-				<s:property value="errorMessage" escape="false"/>
+				<s:property value="errorMessage" escape="false" />
 			</s:if>
 			<table>
 				<tr>
 					<td>商品名</td>
-					<td><input type="text" name="itemName"/></td>
+					<td><input type="text" name="itemName" /></td>
 					<td></td>
 				</tr>
 				<tr>
 					<td>値段</td>
-					<td><input type="text" name="itemPrice" pattern="[1-9][0-9]*" title="半角数字"/></td>
+					<td><input type="text" name="itemPrice" pattern="[1-9][0-9]*"
+						title="半角数字" /></td>
 					<td><span>円</span></td>
 				</tr>
 				<tr>
 					<td>在庫</td>
-					<td><input type="text" name="number" pattern="[1-9][0-9]*" title="半角数字"/></td>
+					<td><input type="text" name="number" pattern="[1-9][0-9]*"
+						title="半角数字" /></td>
 					<td><span>個</span></td>
 				</tr>
 
 			</table>
 			<br>
-			<input type="submit" value="登録"/>
+			<input type="submit" value="登録" />
 		</s:form>
-		<p><a href='<s:url action ="AdminAction"/>'>管理者TOPへ戻る</a></p>
+		<p>
+			<a href='<s:url action ="AdminAction"/>'>管理者TOPへ戻る</a>
+		</p>
 	</div>
 
 	<div id="footer">
+		<div class="footer-link">
+			<ul>
+				<li>初めての方へ</li>
+				<li>会社概要</li>
+				<li>利用規約</li>
+				<li>プライバシーポリシー</li>
+				<li>推奨環境</li>
+			</ul>
+		</div>
+		<div class="copyRight">
+			<p>Copyrights © itudemo Corp.</p>
+		</div>
 	</div>
 </body>
 </html>

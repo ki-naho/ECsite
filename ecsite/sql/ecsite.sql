@@ -43,4 +43,4 @@ create table user_buy_item_transaction(
 
 INSERT INTO item_info_transaction(item_name,item_price,item_stock)VALUES("ノートBook",100,50);
 
-INSERT INTO login_user_transaction(login_id,login_pass,user_name,admin_flg)VALUES("internous","internous01","test","1");
+INSERT INTO login_user_transaction(login_id,login_pass,user_name,admin_flg)VALUES("internous","internous01","test","1",now(),now());

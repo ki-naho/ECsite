@@ -1,17 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ taglib prefix="s" uri="/struts-tags" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="./css/styleUserList.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/styleUserList.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <title>UserList画面</title>
 </head>
 <body>
 	<div id="header">
 		<div class="header-title">
-			<img src="./image/headerIcon.png"/>
+			<img src="./image/headerIcon.png" />
 			<p>DOCO DEMO</p>
 		</div>
 		<div class="header-menu">
@@ -44,14 +45,14 @@
 							<th class="etcLine">詳細</th>
 						</tr>
 						<tr>
-							<td class="idLine"><s:property value="id"/></td>
-							<td class="itemLine"><s:property value="loginId"/></td>
-							<td class="priceLine"><s:property value="password"/></td>
-							<td class="countLine"><s:property value="userName"/></td>
-							<td class="insertLine"><s:property value="insert_date"/></td>
-							<td class="updateLine"><s:property value="update_date"/></td>
-							<td class="etcLine">
-								<a href ='<s:url action="UserDetailsAction">
+							<td class="idLine"><s:property value="id" /></td>
+							<td class="itemLine"><s:property value="loginId" /></td>
+							<td class="priceLine"><s:property value="password" /></td>
+							<td class="countLine"><s:property value="userName" /></td>
+							<td class="insertLine"><s:property value="insert_date" /></td>
+							<td class="updateLine"><s:property value="update_date" /></td>
+							<td class="etcLine"><a
+								href='<s:url action="UserDetailsAction">
 										<s:param name="loginId" value="%{loginId}"/>
 										</s:url>'>詳細</a>
 							</td>
@@ -63,14 +64,29 @@
 		</div>
 		<br>
 		<s:form action="UserListDeleteConfirmAction">
-			<s:submit value="削除"/>
+			<s:submit value="削除" />
 		</s:form>
 		<br>
-		<p><a href='<s:url action ="AdminAction"/>'>管理者TOPへ戻る</a></p>
+		<p>
+			<a href='<s:url action ="AdminAction"/>'>管理者TOPへ戻る</a>
+		</p>
 
 
 	</div>
 
-	<div id="footer"></div>
+	<div id="footer">
+		<div class="footer-link">
+			<ul>
+				<li>初めての方へ</li>
+				<li>会社概要</li>
+				<li>利用規約</li>
+				<li>プライバシーポリシー</li>
+				<li>推奨環境</li>
+			</ul>
+		</div>
+		<div class="copyRight">
+			<p>Copyrights © itudemo Corp.</p>
+		</div>
+	</div>
 </body>
 </html>
